@@ -11,18 +11,20 @@
 .pnp.*
 
 # build files
-packages/client/dist
-packages/client/dist/*.zip
-packages/client/build/assets/*.js
-packages/client/build/assets/*.txt
-packages/client/build/*.zip
-packages/client/build/*.js
-packages/client/build/*.map
-packages/client/build/index.html
-packages/client/build/client-applications
-packages/client/pacts/*.json
-packages/client/build
-packages/client/build/*.txt
+dist
+build/*
+dist/*.zip
+build/authentication-ui
+build/authentication-ui/assets/*.js
+build/assets/*.js
+build/assets/*.txt
+build/*.zip
+build/*.js
+build/*.map
+build/index.html
+build/client-applications
+pacts/*.json
+build/*.txt
 
 # Exclude IDE project folders
 .idea/
