@@ -1,0 +1,25 @@
+export const tokenBody = {
+  sub: '123123',
+  aud: 'https://token-service.onespan.cloud',
+  sol_inst: '233232',
+  scope: [
+    'urn:ospn:platform:accounts',
+    'urn:ospn:platform:realms',
+    'urn:ospn:platform:users',
+    'urn:ospn:platform:plans',
+    'urn:ospn:platform:plans:solution-placements',
+    'urn:ospn:platform:groups',
+    'urn:ospn:platform:deployments',
+    'urn:ospn:platform:subscriptions',
+    'urn:ospn:platform:subscriptions:solution-instances',
+    'urn:ospn:platform:client-applications',
+  ],
+  iss: 'http://internal-k8s-private-6ab000c660-585759071.us-east-1.elb.amazonaws.com/api/tokens',
+  realm: 'mock_realm',
+  memberof: {
+    groups: [],
+  },
+  userid: 'mock-id',
+  jti: '72d74ee9-0bf7-42e9-91e6-e3472d94a70f',
+  acct: 'mock-acct',
+};

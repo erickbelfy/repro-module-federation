@@ -1,0 +1,12 @@
+const { STATIC_CDN_URL } = require('../constants');
+
+const PICK_REMOTE_FROM_CDN = process.env.PICK_REMOTE_FROM_CDN || 0;
+const DEFAULT_REMOTE = PICK_REMOTE_FROM_CDN ? STATIC_CDN_URL : '';
+const MFE_PROJECT_APP = 'AuthenticationApp';
+const REMOTE_ENTRY_PUBLIC_ADDRESS = process.env.REMOTE_ENTRY_PUBLIC_ADDRESS || DEFAULT_REMOTE;
+const REMOTE_ENTRY_FILENAME = process.env.REMOTE_ENTRY_FILENAME || 'remoteEntry';
+module.exports = {
+  MFE_PROJECT_APP,
+  REMOTE_ENTRY_FILENAME,
+  REMOTE_ENTRY_PUBLIC_ADDRESS,
+};

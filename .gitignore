@@ -1,0 +1,86 @@
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Swap the comments on the following lines if you don't wish to use zero-installs
+# Documentation here: https://yarnpkg.com/features/zero-installs
+#!.yarn/cache
+.pnp.*
+
+# build files
+packages/client/dist
+packages/client/dist/*.zip
+packages/client/build/assets/*.js
+packages/client/build/assets/*.txt
+packages/client/build/*.zip
+packages/client/build/*.js
+packages/client/build/*.map
+packages/client/build/index.html
+packages/client/build/client-applications
+packages/client/pacts/*.json
+packages/client/build
+packages/client/build/*.txt
+
+# Exclude IDE project folders
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode
+.project
+*.iml
+
+# OS files
+.DS_STORE
+
+# prettier/linter diffs
+*.rej
+
+# Logs
+*.log
+
+# Docker
+*.tar
+
+# Rpms
+SPECS
+SOURCES
+*.service
+*.rpm
+
+# Cache
+*.tsbuildinfo
+.eslintcache
+tmp_hygen_exec_dir
+
+
+# Bad files generated in the build at commit
+# https://git.onespan.com/frontend/oss-ui/-/commit/36d6f958ee5916c92472f81e660eca27e2433b38
+# Not too sure why yet but will try to fix for the future
+yarn--*
+jest_0/
+v8-compile-cache*
+packages/libs/manifest-cli/manifest.yml
+packages/libs/manifest-cli/test/manifest.json
+
+build-storybook
+dist
+storybook-static
+node_modules
+package-lock.json
+size-snapshot.json
+coverage
+junit.xml
+test-report.xml
+.scannerwork
+/.nyc_output
+*.env
+git.properties
+tmp-git
+.yalc
+yalc.lock
+**/debug.json
+**/*.tgz
+.history

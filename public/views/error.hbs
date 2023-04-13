@@ -1,0 +1,7 @@
+<h1>{{message}}</h1>
+<h2>{{error.status}}</h2>
+<pre>{{error.stack}}</pre>
+
+{{#if sentry}}
+  <a href="https://sentry.io/organizations/onespan/projects/dashboard-server/events/{{sentry}}/">Sentry issue: {{sentry}}</pre>
+{{/if}}

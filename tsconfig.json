@@ -1,0 +1,23 @@
+{
+  "include": [
+    "**/*.d.ts",
+    "../../../node_modules/@date-io/dayjs/type/index.d.ts",
+    "src",
+    "test",
+    "internals"
+  ],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "importsNotUsedAsValues": "error",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "allowJs": true
+  },
+  "exclude": ["coverage"]
+}
